@@ -14,8 +14,8 @@ public class hashMap {
 
         //for Iterate
         //for( int a : arr);
-        for(Map.Entry<Integer,String> e : map.entrySet()){
-            System.out.println(e.getValue() + e.getKey());
+        for( Map.Entry<Integer,String> e : map.entrySet()){
+            System.out.println(e.getKey()+ " "+ e.getValue());
         }
         //Second method we print keys
        /* Set<Integer> keys = map.keySet();

@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 public class NQueensProb {
+    //2
     public boolean isSafe(int row,int col,char[][] board){
         //horizontal(for left right)
         for(int j=0; j<board.length; j++){
@@ -14,9 +15,10 @@ public class NQueensProb {
                 return false;
             }
         }
+        //diagnal checking
         //upper left
         int r = row;
-        for(int c = col; c>=0 && r>=0 ; c--,r--){
+        for(int c = col; c>=0 && r>=0 ; c--,r++){
         if(board[r][c] == 'Q'){
             return false;
         }
@@ -44,6 +46,7 @@ public class NQueensProb {
         }
         return true;
     }
+    //3
     public void saveBoard(char[][] board, List<List<String>> allBoards){
         String row = "";
         List<String> newBoard = new ArrayList<>();
@@ -59,6 +62,7 @@ public class NQueensProb {
         }
         allBoards.add(newBoard);
     }
+    //1
     public void helper(char[][] board, List<List<String>> allBoards,int col){
         if(col == board.length){
             saveBoard(board,allBoards);
@@ -76,6 +80,8 @@ public class NQueensProb {
     public static void main(String args[])
     {
       
+        NQueensProb Queen = new NQueensProb();
+       
        
     }
 }
