@@ -4,7 +4,7 @@ import java.util.Queue;
 
 public class createvertex {
     public static class edge{
-        int src;
+        int src;  
         int dst;
         int wt;
         public edge(int s,int d,int w){
