@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
 
-public class createvertex {
+public class graph_one {
     public static class edge{
         int src;  
         int dst;
