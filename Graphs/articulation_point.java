@@ -21,6 +21,7 @@ public class articulation_point {
             
             graph[2].add(new Edge(2, 0));
             graph[2].add(new Edge(2, 1));
+            
     
             graph[3].add(new Edge(3,0));
             graph[3].add(new Edge(3,4));
